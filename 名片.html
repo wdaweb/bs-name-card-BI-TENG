@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 微軟正黑體;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    @media (min-width: 576px) {
+      .container::before {
+        content: '';
+        width: 1300px;
+        height: 550px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+        background-image: linear-gradient(45deg, white 15.7%, rgba(0, 0, 0, 0.1) 15%, transparent 16%, transparent 85.7%, rgba(0, 0, 0, 0.1) 86%, white 86%);
+      }
+    }
+  </style>
+  <title>我的名片</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+  <div class="container">
+    <!-- no-gutters 從行中移除邊緣 margin -->
+    <div class="row no-gutters shadow">
+      <div class="col-12 col-sm-4">
+        <!-- 小容器 -->
+        <!-- d-sm-none => sm 以下顯示，以上不顯示 -->
+        <img src="./名片.jpg" class="d-sm-none img-fluid" style="width: 800px; height: 300px;">
+        <!-- 大容器 -->
+        <!-- d-none d-sm-inline => sm 以上顯示 -->
+        <img src="./名片.jpg" class="d-none d-sm-inline img-fluid"
+          style="width: 500px; height: 400px; object-fit: cover;">
+      </div>
+
+      <div class="col-12 col-sm-8 bg-light d-flex justify-content-center flex-column  text-justify px-5">
+        <h5 class="mt-5">Front-End Designer</h5>
+
+        <h1>Biteng Xie</h1>
+        <h5 class="mb-5">泰 山 職 訓 局</h5>
+
+        <p class="mb-n1 d-sm-none" style="font-size: 14.5px;">住址：新北市泰山區貴子里致遠新村55之1號</p>
+        <p class="mb-n1 d-none d-sm-inline">住址：新北市泰山區貴子里致遠新村55之1號</p>
+
+        <p class="mb-n1 d-sm-none" style="font-size: 14.5px;"> 電話：09-819-55290</p>
+        <p class="mb-n1 d-none d-sm-inline"> 電話：09-819-55290</p>
+
+        <p class="mb-n1 d-sm-none" style="font-size: 14.5px;"> E-Mail：SHIEBT.1026@gmail.com</p>
+        <p class="mb-n1 d-none d-sm-inline"> E-Mail：SHIEBT.1026@gmail.com</p>
+
+        <p class="mb-5 d-sm-none" style="font-size: 14.5px;"> 網站：http://www.Biteng.example.cc/</p>
+        <p class="mb-5 d-none d-sm-inline"> 網站：http://www.Biteng.example.cc/</p>
+
+      </div>
+
+      <script src="./js/jquery-3.5.1.min.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
